@@ -107,6 +107,11 @@ def add_movie(my_info, title, genre):
     """
     # TODO: Complete function body per Step 6
     # Create dictionary for new movie and add to movie list
+    new_movie = {
+        'title': 'spider-man',
+        'genre': 'Action'
+    }
+    my_info['movies'].append(new_movie)
     return
 
 def print_movie_genres(my_info):
