@@ -89,8 +89,12 @@ def add_pizza_toppings(my_info, toppings):
     """
     # TODO: Complete function body per Step 5
     # Append new pizza toppings to end of list 
+    my_info['pizza toppings'].extend(toppings)
     # Convert all pizza toppings to lowercase
+    for i, pizza_toppings in enumerate(my_info['pizza toppings']):
+        my_info['pizza toppings'][i] = pizza_toppings.lower()
     # Sort toppings list alphabetically
+    my_info['pizza toppings'].sort()
     return
 
 def add_movie(my_info, title, genre):
