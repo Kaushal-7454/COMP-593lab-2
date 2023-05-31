@@ -21,13 +21,13 @@ def main():
         'movies': [
             # TODO: Change this to a movie you like
             {
-                'title': 'Avengers',
-                'genre': 'Action'
+                'title': 'avengers',
+                'genre': 'action'
             },
             # TODO: Add one more movie
             {
-                'title': 'Dhamaal',
-                'genre': 'Comedy'
+                'title': 'hero',
+                'genre': 'comedy'
             }
         ]
     }
@@ -108,8 +108,8 @@ def add_movie(my_info, title, genre):
     # TODO: Complete function body per Step 6
     # Create dictionary for new movie and add to movie list
     new_movie = {
-        'title': 'spider-man',
-        'genre': 'Action'
+        'title': 'titanic',
+        'genre': 'romantic'
     }
     my_info['movies'].append(new_movie)
     return
@@ -121,7 +121,9 @@ def print_movie_genres(my_info):
         my_info (dict): Data structure containing information about me
     """
     # TODO: Complete function body per Step 7
-    print()
+    print("I like to watch ", end='')
+    movies = [genre['genre'] for genre in my_info['movies']]
+    print(', '.join(movies),end=' movies.')
 
 def print_movie_titles(movie_list):
     """Prints a sentence listing all favourite movie titles
