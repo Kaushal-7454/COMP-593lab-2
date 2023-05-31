@@ -125,7 +125,6 @@ def print_movie_genres(my_info):
     print("\nI like to watch ", end='')
     movies = [genre['genre'] for genre in my_info['movies']]
     print(', '.join(movies),end=' movies.'"\n")
-
 def print_movie_titles(movie_list):
     """Prints a sentence listing all favourite movie titles
 
